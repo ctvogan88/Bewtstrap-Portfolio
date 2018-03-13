@@ -63,7 +63,7 @@ body {
     /* Typography */
     font-family: Georgia, Times, "Times New Roman", serif;
     font-weight: 700;
-    color: #4aaaa5;
+    color: #00a2ff;
   }
   
   h1 {
@@ -121,7 +121,7 @@ body {
     text-decoration: none;
   
     /* Visual */
-    background: #4aaaa5;
+    background: #00a2ff;
   }
   
   nav {
@@ -190,7 +190,7 @@ body {
   
     /* Visual */
     background: #666;
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid #00a2ff;
   }
   
   /* sidebar */
@@ -311,7 +311,7 @@ body {
   
     color: #fff;
     text-align: center;
-    background: #4aaaa5;
+    background: #00a2ff;
   
     /* Visual */
     border-bottom: 0;
@@ -376,20 +376,23 @@ body {
   
     /* Misc */
     cursor: pointer;
-    background: #4aaaa5;
+    background: #00a2ff;
   
     /* Visual */
     border: 0 none;
   }
   
+  //Media Responsiveness to >640px
   @media screen and (max-width: 640px) {
     /* The body's bg color will be #333 */
     body {
       background-color: #333;
+      height: auto;
     }
   
     #logo{
         width: 100%;
+        background-color: none;
     }
     nav{
         margin: auto;
@@ -421,7 +424,25 @@ body {
     }
 
     .sidebar{
+        margin: auto;
         width: 100%;
+        max-width: 640px;
     }
+    /* IT WAS CHALLENGING TO MAKE THE IMAGES EXPAND TO 100% VIEWPORT */
+    .work {
+        /* Positioning */
+        position: relative;
+        float: none;
+      
+        /* Box-model */
+        width: 640px;
+        margin: 20px 0 25px;
+        overflow: auto;
+      }
+
+      .container img {
+        /* Box-model */
+        width: 640px;
+      }
   }
 
