@@ -197,8 +197,8 @@ body {
   
   .sidebar {
     float: right;
-    width: 100%;
-    max-width: 270px;
+    width: 30%;
+    max-width: 640px;
   
     /* Box-model */
     padding: 30px;
@@ -382,7 +382,7 @@ body {
     border: 0 none;
   }
   
-  //Media Responsiveness to >640px
+  /* Media Responsiveness to >640px */
   @media screen and (max-width: 640px) {
     /* The body's bg color will be #333 */
     body {
@@ -391,21 +391,22 @@ body {
     }
   
     #logo{
-        width: 100%;
+        width: 640px;
         background-color: none;
     }
     nav{
         margin: auto;
         padding: 10px;
-        text-align:center;
-        width:100%;
+        text-align: center;
+        width: 100%;
     }
     li{
         text-align: center;
     }
 
     .main-section{
-        margin-top: 25px;
+        float: left;
+        margin-top: 60px;
         width: 640px;
     }
     .auth-image{
@@ -417,18 +418,20 @@ body {
     }
     /* The wrapper's width will be 600px */
     .wrapper {
-      width: 600px;
+      width: 100%;;
+      padding: 20px;
     }
+
     navbar{
       navbar-inverse;
     }
 
     .sidebar{
-        margin: auto;
+        float: left;
         width: 100%;
-        max-width: 640px;
+        margin: auto;
     }
-    /* IT WAS CHALLENGING TO MAKE THE IMAGES EXPAND TO 100% VIEWPORT */
+
     .work {
         /* Positioning */
         position: relative;
